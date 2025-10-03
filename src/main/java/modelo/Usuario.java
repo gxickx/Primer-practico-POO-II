@@ -92,4 +92,15 @@ abstract class Usuario {
         this.apellido = apellido.trim();
     }
 
+    public void iniciarSesion(String nombreUsuario, String contrasenia) {
+
+        if (nombreUsuario == this.nombreUsuario && contrasenia == this.contrasenia) {
+            System.out.println("Se ha iniciado la sesion.");
+        }
+        else {
+            System.out.println("No se puede iniciar la sesion. Usuario o contraseña inválidos");
+        }
+
+    }
+
 }
